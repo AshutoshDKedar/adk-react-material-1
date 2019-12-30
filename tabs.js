@@ -16,7 +16,9 @@ import Dialog from './dialog';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
-
+  const styles = {
+    padding: '25px'
+  }
   return (
     <Typography
       component="div"
@@ -26,7 +28,7 @@ function TabPanel(props) {
       aria-labelledby={`scrollable-force-tab-${index}`}
       {...other}
     >
-      {value === index && <div p={3}>{children}</div>}
+      {value === index && <div style={styles} p={3}>{children}</div>}
     </Typography>
   );
 }
