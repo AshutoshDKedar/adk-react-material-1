@@ -4,17 +4,11 @@ import AppBar from './appbar';
 import './style.css';
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      name: 'React'
-    };
-  }
-
   render() {
     return (
       <div>
-        <AppBar />
+        <AppBar /><br/>
+        <Tabs />
       </div>
     );
   }
