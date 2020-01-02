@@ -74,9 +74,9 @@ export default function ScrollableTabsButtonForce() {
           textColor="primary"
           aria-label="scrollable force tabs example"
         >
-          <Tab label="Item One" icon={<PhoneIcon />} {...a11yProps(0)} />
-          <Tab label="Item Two" icon={<FavoriteIcon />} {...a11yProps(1)} />
-          <Tab label="Item Three" icon={<PersonPinIcon />} {...a11yProps(2)} />
+          <Tab label="Colleges" icon={<PhoneIcon />} {...a11yProps(0)} />
+          <Tab label="Schools" icon={<FavoriteIcon />} {...a11yProps(1)} />
+          <Tab label="High Schools" icon={<PersonPinIcon />} {...a11yProps(2)} />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
