@@ -13,6 +13,7 @@ import ThumbDown from '@material-ui/icons/ThumbDown';
 import ThumbUp from '@material-ui/icons/ThumbUp';
 import Typography from '@material-ui/core/Typography';
 import Dialog from './dialog';
+import Box from '@material-ui/core/Box';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -28,7 +29,7 @@ function TabPanel(props) {
       aria-labelledby={`scrollable-force-tab-${index}`}
       {...other}
     >
-      {value === index && <div style={styles} p={3}>{children}</div>}
+      {value === index && <Box component="span" m={1}>{children}</Box>}
     </Typography>
   );
 }
